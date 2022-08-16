@@ -1,0 +1,25 @@
+{
+  "name": "teammates-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozqr20/Teammates-Profile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozqr20/Teammates-Profile/issues"
+  },
+  "homepage": "https://github.com/ozqr20/Teammates-Profile#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
