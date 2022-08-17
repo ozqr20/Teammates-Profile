@@ -12,7 +12,7 @@ test('Creates an Engineer object', function() {
 test('get gitUser from the engineer', function() {
     const engineer = new Engineer('Name', '111', 'test@engineer.com', 'Gitname');
 
-    expect(engineer.gitUser()).toEqual(expect.any(String));
+    expect(engineer.getGithub()).toEqual(expect.any(String));
 })
 
 test('Get role from the engineer', function() {
