@@ -6,7 +6,7 @@ const generateCards = data => {
                 <div class='card' style='max-width: 18rem;'>
                     <div class='card-header text-white bg-dark mb-3'>
                         <h2 class='card-title'>${element.name}</h2>
-                        <h3 class='card-title'><i class="fas fa-user-edit'></i> Engineer</h3>
+                        <h3 class='card-title'><i class="fas fa-user-edit"></i> Engineer</h3>
                     </div>
                     <ul class='list-group list-group-flush'>
                         <li class='list-group-item'>ID: ${element.id}</li>
@@ -20,12 +20,12 @@ const generateCards = data => {
                 <div class='card' style='max-width: 18rem;'>
                     <div class='card-header text-white bg-info mb-3'>
                         <h2 class='card-title'>${element.name}</h2>
-                        <h3 class='card-title'><i class="fas fa-user-graduate'></i> Intern</h3>
+                        <h3 class='card-title'><i class="fas fa-user-graduate"></i> Intern</h3>
                     </div>
                     <ul class='list-group list-group-flush'>
                         <li class='list-group-item'>ID: ${element.id}</li>
                         <li class='list-group-item'>Email: <span><a href="Email:${element.email}">${element.email}</a></span></li>
-                        <li class='list-group-item">School: ${element.school}</li>
+                        <li class='list-group-item'>School: ${element.school}</li>
                     <ul>
                 </div>
             `
@@ -34,12 +34,12 @@ const generateCards = data => {
                 <div class='card' style='max-width: 18rem;'>
                     <div class='card-header text-white bg-primary mb-3'>
                         <h2 class='card-title'>${element.name}</h2>
-                        <h3 class='card-title'><i class="far fa-id-card'></i> Manager</h3>
+                        <h3 class='card-title'><i class="far fa-id-card"></i> Manager</h3>
                     </div>
                     <ul class='list-group list-group-flush'>
                         <li class='list-group-item'>ID: ${element.id}</li>
                         <li class='list-group-item'>Email: <span><a href="Email:${element.email}">${element.email}</a></span></li>
-                        <li class='list-group-item">Office Number: ${element.office}</li>
+                        <li class='list-group-item'>Office Number: ${element.office}</li>
                     <ul>
                 </div>
             `
@@ -70,11 +70,11 @@ module.exports = templateData => {
 
     <body>
         <header>
-            <div class='container flex-row justify-space-between align-center text-center'>
-                <h1 class='page-title text-white bg-danger py-2 px-3'>TEAM</h1>
+            <div class='container flex-row justify-space-around align-center text-center'>
+                <h1 class='page-title text-white py-2 px-3'>TEAM</h1>
             </div>
         </header>
-        <main class='container my-5">
+        <main class='container my-5'>
             <section class='my-3' id='team'>
                 <div class='container flex-row justify-space-around align-center'>
                 ${generateCards(templateData)}

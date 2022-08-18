@@ -6,7 +6,7 @@ test('Creates an Intern Object', function() {
     expect(intern.name).toEqual(expect.any(String));
     expect(intern.id).toEqual(expect.any(String));
     expect(intern.email).toEqual(expect.stringContaining('@'));
-    expect(intern.intern).toEqual(expect.any(String));
+    expect(intern.school).toEqual(expect.any(String));
 });
 
 test('get intern school', function() {
