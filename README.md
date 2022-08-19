@@ -21,5 +21,10 @@
   
   ## Tests
   type in your terminal npm run test
+  
+  [![teammates profile](https://user-images.githubusercontent.com/53874145/185531215-5f1c3fda-4798-4ac0-80d9-fb30ce1162d4.PNG)](https://youtu.be/onergkVZcyE)
+  
+  
+  Live demo https://youtu.be/onergkVZcyE
 
   Copyright 2022 by ozqr20
