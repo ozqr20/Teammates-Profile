@@ -267,24 +267,6 @@ const EngineerPrompt = UserData => {
 };
 
 UserData = [];
-
-ManagerPrompt(UserData) //init())
-    .then(UserData => {
-        return generatePage(UserData);
-    })
-    .then(pageHTML => {
-        return writeFile(pageHTML);
-      })
-      .then(writeFileResponse => {
-        console.log(writeFileResponse);
-        return copyFile();
-      })
-      .then(copyFileResponse => {
-        console.log(copyFileResponse);
-      })
-      .catch(err => {
-        console.log(err);
-      });
       
 // It Creates a README.md File 
 const questions = () => {
@@ -401,12 +383,33 @@ function writeToFile(fileName, data) {
     err ? console.error(err): console.log('README.md Created'));
 }
 
+// Create Index and call questions 
 function init() {
-    questions()
-    .then((data) => {
-        writeToFile('README.md', generateMarkdown(data))
+    ManagerPrompt(UserData)
+    .then((UserData) => {
+        return generatePage(UserData);
     })
-};
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse);
+        return copyFile();
+    })
+    .then(copyFileResponse => {
+        console.log(copyFileResponse);
+    })
+    .then(UserData => {
+        questions()
+        .then((data) => {
+            writeToFile('README.md', generateMarkdown(data))
+        })
+    })
+    .catch(err => {
+        console.log(err);
+    });
+}
+
 
 // Function call to initialize app
-//init();
+init();
